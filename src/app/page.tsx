@@ -2,32 +2,37 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Profile from './components/Profile';
+import Web from './components/Web';
+import TwoD from './components/TwoD';
+import ThreeD from './components/ThreeD';
+import Editorial from './components/Editorial';
 
 const accordionData = [
   {
     title: 'sohyeon kim',
-    content: '첫 번째 패널의 내용입니다.',
-    bgColor: 'hover:bg-blue',
+    content: <Profile />,
+    hoverBgColor: 'hover:bg-blue',
   },
   {
     title: 'web',
-    content: '두 번째 패널의 내용입니다.',
-    bgColor: 'hover:bg-red',
+    content: <Web />,
+    hoverBgColor: 'hover:bg-red',
   },
   {
     title: '2D',
-    content: '세 번째 패널의 내용입니다.',
-    bgColor: 'hover:bg-pink',
+    content: <TwoD />,
+    hoverBgColor: 'hover:bg-pink',
   },
   {
     title: '3D',
-    content: '네 번째 패널의 내용입니다.',
-    bgColor: 'hover:bg-lemon',
+    content: <ThreeD />,
+    hoverBgColor: 'hover:bg-lemon',
   },
   {
     title: 'editorial',
-    content: '다섯 번째 패널의 내용입니다.',
-    bgColor: 'hover:bg-gray',
+    content: <Editorial />,
+    hoverBgColor: 'hover:bg-gray',
   },
 ];
 
@@ -48,8 +53,10 @@ export default function Home() {
         {accordionData.map((item, idx) => (
           <motion.div
             key={idx}
-            className={`relative flex items-center justify-center cursor-pointer ${
-              openIdx === idx ? 'bg-white' : `bg-transparent ${item.bgColor}`
+            className={`relative flex justify-center cursor-pointer ${
+              openIdx === idx
+                ? 'bg-white'
+                : `bg-transparent ${item.hoverBgColor}`
             } `}
             onClick={() => toggleAccordion(idx)}
             initial={false} // 첫 클릭 시에도 애니메이션 적용
@@ -60,7 +67,6 @@ export default function Home() {
               {item.title}
             </p>
             <motion.div
-              className="p-4 text-center text-gray-700"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{
                 opacity: openIdx === idx ? 1 : 0,
