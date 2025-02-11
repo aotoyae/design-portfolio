@@ -4,19 +4,31 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const accordionData = [
-  { title: 'sohyeon kim', content: '첫 번째 패널의 내용입니다.' },
-  { title: 'web', content: '두 번째 패널의 내용입니다.' },
-  { title: '2D', content: '세 번째 패널의 내용입니다.' },
-  { title: '3D', content: '네 번째 패널의 내용입니다.' },
-  { title: 'editorial', content: '다섯 번째 패널의 내용입니다.' },
-];
-
-const menuColors = [
-  'bg-[#A5CBFF]',
-  'bg-[#FF2424]',
-  'bg-[#FF859A]',
-  'bg-[#FCFFD0]',
-  'bg-[#D9D9D9]',
+  {
+    title: 'sohyeon kim',
+    content: '첫 번째 패널의 내용입니다.',
+    bgColor: 'hover:bg-blue',
+  },
+  {
+    title: 'web',
+    content: '두 번째 패널의 내용입니다.',
+    bgColor: 'hover:bg-red',
+  },
+  {
+    title: '2D',
+    content: '세 번째 패널의 내용입니다.',
+    bgColor: 'hover:bg-pink',
+  },
+  {
+    title: '3D',
+    content: '네 번째 패널의 내용입니다.',
+    bgColor: 'hover:bg-lemon',
+  },
+  {
+    title: 'editorial',
+    content: '다섯 번째 패널의 내용입니다.',
+    bgColor: 'hover:bg-gray',
+  },
 ];
 
 export default function Home() {
@@ -36,7 +48,9 @@ export default function Home() {
         {accordionData.map((item, idx) => (
           <motion.div
             key={idx}
-            className={`relative flex items-center justify-center cursor-pointer ${openIdx === idx ? 'bg-white' : menuColors[idx]}`}
+            className={`relative flex items-center justify-center cursor-pointer ${
+              openIdx === idx ? 'bg-white' : `bg-transparent ${item.bgColor}`
+            } `}
             onClick={() => toggleAccordion(idx)}
             initial={false} // 첫 클릭 시에도 애니메이션 적용
             animate={{ flex: openIdx === idx ? 12 : 1 }}
