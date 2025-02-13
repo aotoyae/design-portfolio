@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import helmet1 from '@/app/assets/helmet_1.png';
-import helmet2 from '@/app/assets/helmet_2.png';
-import snowball1 from '@/app/assets/snowball_1.jpg';
-import snowball2 from '@/app/assets/snowball_2.jpg';
-import vans from '@/app/assets/vans.jpg';
-import watch1 from '@/app/assets/watch_1.jpg';
-import watch2 from '@/app/assets/watch_2.jpg';
+import helmet1 from '@/app/assets/threeD/helmet_1.png';
+import helmet2 from '@/app/assets/threeD/helmet_2.png';
+import snowball1 from '@/app/assets/threeD/snowball_1.jpg';
+import snowball2 from '@/app/assets/threeD/snowball_2.jpg';
+import vans from '@/app/assets/threeD/vans.jpg';
+import watch1 from '@/app/assets/threeD/watch_1.jpg';
+import watch2 from '@/app/assets/threeD/watch_2.jpg';
 
 const ThreeD = () => {
   return (
