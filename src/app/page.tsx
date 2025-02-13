@@ -53,7 +53,7 @@ export default function Home() {
         {accordionData.map((item, idx) => (
           <motion.div
             key={idx}
-            className="relative flex justify-center cursor-pointer group"
+            className="relative flex justify-center cursor-pointer bg-transparent group"
             // className={`relative flex justify-center cursor-pointer ${
             //   openIdx === idx
             //     ? 'bg-white'
@@ -73,6 +73,7 @@ export default function Home() {
               </span>
             </p>
             <motion.div
+              className="pr-20"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{
                 opacity: openIdx === idx ? 1 : 0,
