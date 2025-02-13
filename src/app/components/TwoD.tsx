@@ -13,7 +13,7 @@ const TwoD = () => {
   return (
     <main className="pb-60 flex flex-col gap-40">
       <section className="flex justify-between items-center gap-10">
-        <div className="w-4/6 flex flex-col justify-start gap-32">
+        <div className="w-4/6 flex flex-col gap-32">
           <Image src={teamGato} alt="축구팀 가토" />
           <div>
             <h6 className="font-bold pb-2">축구팀 FC GATO 로고 제작</h6>
