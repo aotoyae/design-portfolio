@@ -53,11 +53,12 @@ export default function Home() {
         {accordionData.map((item, idx) => (
           <motion.div
             key={idx}
-            className={`relative flex justify-center cursor-pointer ${
-              openIdx === idx
-                ? 'bg-white'
-                : `bg-transparent ${item.hoverBgColor}`
-            } `}
+            className="relative flex justify-center cursor-pointer group"
+            // className={`relative flex justify-center cursor-pointer ${
+            //   openIdx === idx
+            //     ? 'bg-white'
+            //     : `bg-transparent ${item.hoverBgColor}`
+            // } `}
             onClick={() => toggleAccordion(idx)}
             initial={false} // 첫 클릭 시에도 애니메이션 적용
             animate={{ flex: openIdx === idx ? 12 : 1 }}
@@ -65,6 +66,11 @@ export default function Home() {
           >
             <p className="absolute vertical-english top-2 right-2">
               {item.title}
+              <span
+                className={`pt-2 group-hover:inline ${openIdx !== idx && 'hidden'}`}
+              >
+                ●
+              </span>
             </p>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
