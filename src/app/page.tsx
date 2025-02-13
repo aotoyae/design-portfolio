@@ -73,7 +73,7 @@ export default function Home() {
               </span>
             </p>
             <motion.div
-              className="pr-20"
+              className="pr-20 text-sm"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{
                 opacity: openIdx === idx ? 1 : 0,

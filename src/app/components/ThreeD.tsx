@@ -9,7 +9,7 @@ import watch2 from '@/app/assets/threeD/watch_2.jpg';
 
 const ThreeD = () => {
   return (
-    <main className="w-full flex flex-col gap-48 py-32">
+    <main className="pt-10 pb-48 w-full flex flex-col gap-48">
       <Image src={helmet1} alt="투구 모델링" />
       <Image src={helmet2} alt="투구 모델링" />
       <Image src={snowball1} alt="스노우볼 모델링" />
