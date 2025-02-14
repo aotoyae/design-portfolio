@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <div className="flex w-full h-[100vh]">
+      <div className="w-full h-[100vh] flex">
         {accordionData.map((item, idx) => (
           <motion.div
             key={idx}
@@ -73,7 +73,7 @@ export default function Home() {
               </span>
             </p>
             <motion.div
-              className="pr-20 text-sm"
+              className="pr-12 text-sm"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{
                 opacity: openIdx === idx ? 1 : 0,

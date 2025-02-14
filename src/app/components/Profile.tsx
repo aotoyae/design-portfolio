@@ -40,6 +40,14 @@ const Profile = () => {
         <h6 className="font-bold">academic background</h6>
         <article className="leading-relaxed">
           <div className="flex gap-2">
+            <p>2024</p>
+            <p>팀스파르타 내일배움캠프 프론트엔드 과정</p>
+          </div>
+          <div className="flex gap-2">
+            <p>2022</p>
+            <p>그린컴퓨터아카데미 반응형 웹디자인/웹퍼블리셔 과정</p>
+          </div>
+          <div className="flex gap-2">
             <p>2022</p>
             <p>협성대학교 산업디자인학과 졸업</p>
           </div>
@@ -50,11 +58,11 @@ const Profile = () => {
               <p className="text-deep-gray">
                 도록 레이아웃 디자인, 인쇄 과정 담당
               </p>
-              <p>졸업전시위원회 도록팀</p>
+              <p>예술대학 학생회 문화부장</p>
               <p className="text-deep-gray">예술대 이벤트 기획 및 자료 제작</p>
-              <p>졸업전시위원회 도록팀</p>
+              <p>교내 SNS 홍보단 협성대스타</p>
               <p className="text-deep-gray">
-                학교 홍보물 콘텐츠 제작 및 포스팅
+                교내 홍보물 콘텐츠 제작 및 포스팅
               </p>
             </div>
           </div>
@@ -63,7 +71,7 @@ const Profile = () => {
             <div>
               <p>산업디자인학과 학생회 문화국장</p>
               <p className="text-deep-gray">
-                학교 행사 포스터 및 플랜카드 제작
+                학과내 행사 포스터 및 플랜카드 제작
               </p>
             </div>
           </div>
