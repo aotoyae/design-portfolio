@@ -16,6 +16,7 @@ export default {
         pink: '#ffafbd',
         lemon: '#fcffd0',
         gray: '#d9d9d9',
+        'deep-gray': '#a9a9a9',
       },
     },
   },
