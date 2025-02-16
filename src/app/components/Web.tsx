@@ -17,6 +17,10 @@ import moriMobileLayout from '@/app/assets/web/mori_mobile_chair.png';
 import moriMobileMain from '@/app/assets/web/mori_mobile_home.png';
 import moriMobileExposition from '@/app/assets/web/mori_mobile_exposition.png';
 import moriMobileMenu from '@/app/assets/web/mori_mobile_menu.png';
+import eyes from '@/app/assets/web/eyes.gif';
+import text from '@/app/assets/web/text.gif';
+import star from '@/app/assets/web/star.gif';
+import tacoya from '@/app/assets/web/tacoya.gif';
 
 const Web = () => {
   return (
@@ -183,8 +187,14 @@ const Web = () => {
           <Image src={moriMobileMenu} alt="모리 모바일 메뉴" />
         </section>
       </section>
-      <section>
+      <section className="flex flex-col items-center">
         <h6 className="font-bold pb-2">lab</h6>
+        <section className="w-1/2 flex flex-col gap-40">
+          <Image src={eyes} alt="커서를 따라다니는 눈 이미지" />
+          <Image src={text} alt="커서에 따라 색이 변하는 텍스트 이미지" />
+          <Image src={star} alt="커서를 따라다니는 별 이미지" />
+          <Image src={tacoya} alt="카테고리에 따라 변경되는 사진들" />
+        </section>
       </section>
     </main>
   );
