@@ -20,8 +20,8 @@ import moriMobileMenu from '@/app/assets/web/mori_mobile_menu.png';
 
 const Web = () => {
   return (
-    <main className="pb-60 flex flex-col items-center">
-      <section className="pb-32">
+    <main className="pb-60 flex flex-col items-center gap-32">
+      <section>
         <Image src={granhandImac} alt="그랑핸드 아이맥 목업" />
         <div className="pb-60 flex flex-col items-center">
           <h6 className="font-bold pb-2">
@@ -103,42 +103,41 @@ const Web = () => {
         </div>
         <section className="pb-10 grid grid-cols-4 gap-2">
           <article className="pl-3 pr-1">
-            <h6 className="font-bold pb-2">01 MAIN PAGE</h6>
+            <h6 className="font-bold pb-2">01 FIXED LAYOUT-DESKTOP/TABLET</h6>
             <p className="leading-relaxed">
-              그랑핸드의 메인 페이지입니다.
+              모리의 데스크탑/태블릿 레이아웃입니다.
               <br />
-              베스트/큐레이션 제품, 브랜드 스토리를 확인할 수 있으며, 다섯 곳의
-              매장 사진에 커서를 올리면 위치가 나타납니다.
+              메뉴와 상하단을 고정시켜 단순하고 정렬된 느낌을 강조하였습니다.
             </p>
           </article>
           <article className="pl-3 pr-1">
-            <h6 className="font-bold pb-2">02 SUB PAGE</h6>
+            <h6 className="font-bold pb-2">02 MAIN PAGE</h6>
             <p className="leading-relaxed">
-              그랑핸드의 제품 리스트 페이지입니다.
+              모리의 메인 페이지입니다.
               <br />
-              제품들을 세 열로 정렬하고 제품명, 가격, 용량을 표시하였습니다.
+              전시 배너와 새 제품, 브랜드별 카테고리, 인스타그램 이미지를 살펴볼
+              수 있습니다.
             </p>
           </article>
           <article className="pl-3 pr-1">
-            <h6 className="font-bold pb-2">03 DETAIL PAGE</h6>
+            <h6 className="font-bold pb-2">03 PRODUCT PAGE</h6>
             <p className="leading-relaxed">
-              그랑핸드의 제품 상세 페이지입니다.
+              모리의 제품 페이지입니다.
               <br />
-              대표 이미지 두 개와 향에 맞는 사진을 상단에 배치하습니다. 하단에서
-              제품의 상세 정보를 확인 할 수 있습니다.
+              카테고리 클릭 시 컬러가 바뀌며, 제품 이미지들을 확인할 수
+              있습니다.
             </p>
           </article>
           <article className="pl-3 pr-1">
-            <h6 className="font-bold pb-2">04 LOGIN PAGE</h6>
+            <h6 className="font-bold pb-2">04 EXPOSITION PAGE</h6>
             <p className="leading-relaxed">
-              그랑핸드의 로그인 페이지입니다.
+              모리의 전시 안내 페이지입니다.
               <br />
-              밋밋해 보일 수 있는 화면에 긴 배너 이미지를 넣어주었고, 소셜
-              로그인 버튼을 추가하였습니다.
+              좌측의 전시 포스터와 우측 안내문을 살펴볼 수 있습니다.
             </p>
           </article>
         </section>
-        <section className="grid grid-cols-4 gap-2">
+        <section className="pb-24 grid grid-cols-4 gap-2">
           <div>
             <Image src={moriWebLayout1} alt="모리 데스크탑/테블릿 레이아웃" />
             <Image src={moriWebLayout2} alt="모리 데스크탑/테블릿 레이아웃" />
@@ -149,29 +148,28 @@ const Web = () => {
         </section>
         <section className="pb-10 grid grid-cols-4 gap-2">
           <article className="pl-3 pr-1">
-            <h6 className="font-bold pb-2">01 MAIN PAGE</h6>
+            <h6 className="font-bold pb-2">05 FIXED LAYOUT-MOBILE</h6>
             <p className="leading-relaxed">
-              그랑핸드의 메인 페이지입니다.
+              모리의 모바일 레이아웃입니다.
               <br />
-              베스트/큐레이션 제품, 브랜드 스토리를 확인할 수 있으며, 다섯 곳의
-              매장 사진에 커서를 올리면 위치가 나타납니다.
+              메뉴와 상하단을 고정시켜 단순하고 정렬된 느낌을 강조하였습니다.
             </p>
           </article>
           <article className="pl-3 pr-1 col-span-2">
-            <h6 className="font-bold pb-2">02 SUB PAGE</h6>
+            <h6 className="font-bold pb-2">06 VERTICAL LAYOUT</h6>
             <p className="leading-relaxed">
-              그랑핸드의 제품 리스트 페이지입니다.
+              사용자가 모바일 환경에서 편리하게 제품을 구경할 수 있도록
               <br />
-              제품들을 세 열로 정렬하고 제품명, 가격, 용량을 표시하였습니다.
+              세로형 레이아웃으로 구성하였습니다.
             </p>
           </article>
           <article className="pl-3 pr-1">
-            <h6 className="font-bold pb-2">04 LOGIN PAGE</h6>
+            <h6 className="font-bold pb-2">07 MENU LAYOUT</h6>
             <p className="leading-relaxed">
-              그랑핸드의 로그인 페이지입니다.
+              모리의 메뉴 레이아웃입니다.
               <br />
-              밋밋해 보일 수 있는 화면에 긴 배너 이미지를 넣어주었고, 소셜
-              로그인 버튼을 추가하였습니다.
+              Menu 버튼 클릭 시 표시되며 카테고리를 선택하면 메뉴가 사라지고
+              원하는 페이지로 이동합니다.
             </p>
           </article>
         </section>
@@ -184,6 +182,9 @@ const Web = () => {
           />
           <Image src={moriMobileMenu} alt="모리 모바일 메뉴" />
         </section>
+      </section>
+      <section>
+        <h6 className="font-bold pb-2">lab</h6>
       </section>
     </main>
   );
