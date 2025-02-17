@@ -199,14 +199,17 @@ const Web = () => {
           <Image src={moriMobileMenu} alt="모리 모바일 메뉴" />
         </section>
       </section>
-      <section className="flex flex-col items-center">
-        <h6 className="font-bold pb-2">lab</h6>
+      <section className="flex flex-col items-center gap-40">
+        <h6 className="font-bold">lab</h6>
         <section className="w-1/2 flex flex-col gap-40">
           <Image src={eyes} alt="커서를 따라다니는 눈 이미지" />
           <Image src={text} alt="커서에 따라 색이 변하는 텍스트 이미지" />
           <Image src={star} alt="커서를 따라다니는 별 이미지" />
           <Image src={tacoya} alt="카테고리에 따라 변경되는 사진들" />
         </section>
+        <video width={800} controls>
+          <source src="/videos/x_mas.mp4" />
+        </video>
       </section>
     </main>
   );
