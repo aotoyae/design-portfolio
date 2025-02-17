@@ -32,10 +32,15 @@ const Web = () => {
             HTML| CSS 를 활용한 그랑핸드 홈페이지 디자인 및 구성
           </h6>
           <div className="flex gap-4 underline underline-offset-1">
-            <Link href="http://kms2hn.dothome.co.kr/GRANHAND/main.html">
+            <Link
+              href="http://kms2hn.dothome.co.kr/GRANHAND/main.html"
+              target="_blank"
+            >
               link
             </Link>
-            <Link href="https://github.com/aotoyae/granhand">github</Link>
+            <Link href="https://github.com/aotoyae/granhand" target="_blank">
+              github
+            </Link>
           </div>
         </div>
         <section className="pb-10 grid grid-cols-4 gap-2">
@@ -101,8 +106,15 @@ const Web = () => {
             HTML | CSS | Jquery 를 활용한 모리의 홈페이지 디자인 및 구성
           </h6>
           <div className="flex gap-4 underline underline-offset-1">
-            <Link href="http://kms2hn.dothome.co.kr/mori/mori.html">link</Link>
-            <Link href="https://github.com/aotoyae/mori">github</Link>
+            <Link
+              href="http://kms2hn.dothome.co.kr/mori/mori.html"
+              target="_blank"
+            >
+              link
+            </Link>
+            <Link href="https://github.com/aotoyae/mori" target="_blank">
+              github
+            </Link>
           </div>
         </div>
         <section className="pb-10 grid grid-cols-4 gap-2">
