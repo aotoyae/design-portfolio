@@ -1,32 +1,16 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import granhandImac from '@/app/assets/web/granhand_imac.png';
-import granhandMain from '@/app/assets/web/granhand_main.png';
-import granhandSub from '@/app/assets/web/granhand_sub.png';
-import granhandDetail from '@/app/assets/web/granhand_detail.png';
-import granhandLogin from '@/app/assets/web/granhand_login.png';
-import moriImac from '@/app/assets/web/mori_imac.png';
-import moriIpad from '@/app/assets/web/mori_ipad.png';
-import moriIphone from '@/app/assets/web/mori_iphone.png';
-import moriWebLayout1 from '@/app/assets/web/mori_web_lighting_1.png';
-import moriWebLayout2 from '@/app/assets/web/mori_web_lighting_2.png';
-import moriWebMain from '@/app/assets/web/mori_web_all.png';
-import moriWebProduct from '@/app/assets/web/mori_web_table.png';
-import moriWebExposition from '@/app/assets/web/mori_web_exposition.png';
-import moriMobileLayout from '@/app/assets/web/mori_mobile_chair.png';
-import moriMobileMain from '@/app/assets/web/mori_mobile_home.png';
-import moriMobileExposition from '@/app/assets/web/mori_mobile_exposition.png';
-import moriMobileMenu from '@/app/assets/web/mori_mobile_menu.png';
-import eyes from '@/app/assets/web/eyes.gif';
-import text from '@/app/assets/web/text.gif';
-import star from '@/app/assets/web/star.gif';
-import tacoya from '@/app/assets/web/tacoya.gif';
 
 const Web = () => {
   return (
     <main className="pb-60 flex flex-col items-center gap-32">
-      <section>
-        <Image src={granhandImac} alt="그랑핸드 아이맥 목업" />
+      <section className="w-full flex flex-col items-center">
+        <Image
+          src="/images/web/granhand_imac.png"
+          alt="그랑핸드 아이맥 목업"
+          width={1300}
+          height={600}
+        />
         <div className="pb-60 flex flex-col items-center">
           <h6 className="font-bold pb-2">
             HTML| CSS 를 활용한 그랑핸드 홈페이지 디자인 및 구성
@@ -81,23 +65,53 @@ const Web = () => {
           </article>
         </section>
         <section className="grid grid-cols-4 gap-2">
-          <Image src={granhandMain} alt="그랑핸드 메인 페이지" />
-          <Image src={granhandSub} alt="그랑핸드 서브 페이지" />
-          <Image src={granhandDetail} alt="그랑핸드 제품 상세 페이지" />
-          <Image src={granhandLogin} alt="그랑핸드 로그인 페이지" />
+          <Image
+            src="/images/web/granhand_main.png"
+            alt="그랑핸드 메인 페이지"
+            width={400}
+            height={800}
+          />
+          <Image
+            src="/images/web/granhand_sub.png"
+            alt="그랑핸드 서브 페이지"
+            width={400}
+            height={800}
+          />
+          <Image
+            src="/images/web/granhand_detail.png"
+            alt="그랑핸드 제품 상세 페이지"
+            width={400}
+            height={800}
+          />
+          <Image
+            src="/images/web/granhand_login.png"
+            alt="그랑핸드 로그인 페이지"
+            width={400}
+            height={800}
+          />
         </section>
       </section>
       <section>
         <div className="pb-14 grid grid-cols-6 place-items-end">
           <Image
-            src={moriIpad}
+            src="/images/web/mori_ipad.png"
             alt="모리 아이패드 목업"
+            width={400}
+            height={400}
             className="col-span-2"
           />
-          <Image src={moriImac} alt="모리 아이맥 목업" className="col-span-3" />
           <Image
-            src={moriIphone}
+            src="/images/web/mori_imac.png"
+            alt="모리 아이맥 목업"
+            width={800}
+            height={400}
+            className="col-span-3"
+          />
+          <Image
+            src="/images/web/mori_iphone.png"
             alt="모리 아이폰 목업"
+            width={200}
+            height={400}
             className="col-span-1"
           />
         </div>
@@ -155,12 +169,37 @@ const Web = () => {
         </section>
         <section className="pb-24 grid grid-cols-4 gap-2">
           <div>
-            <Image src={moriWebLayout1} alt="모리 데스크탑/테블릿 레이아웃" />
-            <Image src={moriWebLayout2} alt="모리 데스크탑/테블릿 레이아웃" />
+            <Image
+              src="/images/web/mori_web_lighting_1.png"
+              alt="모리 데스크탑/테블릿 레이아웃"
+              width={600}
+              height={400}
+            />
+            <Image
+              src="/images/web/mori_web_lighting_2.png"
+              alt="모리 데스크탑/테블릿 레이아웃"
+              width={600}
+              height={400}
+            />
           </div>
-          <Image src={moriWebMain} alt="모리 웹 메인 페이지" />
-          <Image src={moriWebProduct} alt="모리 제품 페이지" />
-          <Image src={moriWebExposition} alt="모리 메인 전시 안내 페이지" />
+          <Image
+            src="/images/web/mori_web_all.png"
+            alt="모리 웹 메인 페이지"
+            width={600}
+            height={800}
+          />
+          <Image
+            src="/images/web/mori_web_table.png"
+            alt="모리 제품 페이지"
+            width={600}
+            height={800}
+          />
+          <Image
+            src="/images/web/mori_web_exposition.png"
+            alt="모리 메인 전시 안내 페이지"
+            width={600}
+            height={800}
+          />
         </section>
         <section className="pb-10 grid grid-cols-4 gap-2">
           <article className="pl-3 pr-1">
@@ -190,22 +229,59 @@ const Web = () => {
           </article>
         </section>
         <section className="grid grid-cols-4">
-          <Image src={moriMobileLayout} alt="모리 모바일 레이아웃" />
-          <Image src={moriMobileMain} alt="모리 모바일 메인 페이지" />
           <Image
-            src={moriMobileExposition}
-            alt="모리 모바일 전시 안내 페이지"
+            src="/images/web/mori_mobile_chair.png"
+            alt="모리 모바일 레이아웃"
+            width={400}
+            height={800}
           />
-          <Image src={moriMobileMenu} alt="모리 모바일 메뉴" />
+          <Image
+            src="/images/web/mori_mobile_home.png"
+            alt="모리 모바일 메인 페이지"
+            width={400}
+            height={800}
+          />
+          <Image
+            src="/images/web/mori_mobile_exposition.png"
+            alt="모리 모바일 전시 안내 페이지"
+            width={400}
+            height={800}
+          />
+          <Image
+            src="/images/web/mori_mobile_menu.png"
+            alt="모리 모바일 메뉴"
+            width={400}
+            height={800}
+          />
         </section>
       </section>
       <section className="flex flex-col items-center gap-40">
         <h6 className="font-bold">lab</h6>
         <section className="w-1/2 flex flex-col gap-40">
-          <Image src={eyes} alt="커서를 따라다니는 눈 이미지" />
-          <Image src={text} alt="커서에 따라 색이 변하는 텍스트 이미지" />
-          <Image src={star} alt="커서를 따라다니는 별 이미지" />
-          <Image src={tacoya} alt="카테고리에 따라 변경되는 사진들" />
+          <Image
+            src="/images/web/eyes.gif"
+            alt="커서를 따라다니는 눈 이미지"
+            width={600}
+            height={600}
+          />
+          <Image
+            src="/images/web/text.gif"
+            alt="커서에 따라 색이 변하는 텍스트 이미지"
+            width={600}
+            height={600}
+          />
+          <Image
+            src="/images/web/star.gif"
+            alt="커서를 따라다니는 별 이미지"
+            width={600}
+            height={1200}
+          />
+          <Image
+            src="/images/web/tacoya.gif"
+            alt="카테고리에 따라 변경되는 사진들"
+            width={600}
+            height={1200}
+          />
         </section>
         <video width={800} controls>
           <source src="/videos/x_mas.mp4" />

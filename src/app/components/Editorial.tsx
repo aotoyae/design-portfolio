@@ -1,20 +1,34 @@
 import Image from 'next/image';
-import cover from '@/app/assets/editorial/cover.png';
-import book1 from '@/app/assets/editorial/book_1.png';
-import book2 from '@/app/assets/editorial/book_2.png';
-import book3 from '@/app/assets/editorial/book_3.png';
-import print1 from '@/app/assets/editorial/print_1.png';
-import print2 from '@/app/assets/editorial/print_2.png';
-import print3 from '@/app/assets/editorial/print_3.png';
 
 const Editorial = () => {
   return (
-    <main className="pb-60 flex flex-col gap-32">
-      <Image src={cover} alt="도록 표지" />
+    <main className="pb-60 flex flex-col items-center gap-32">
+      <Image
+        src="/images/editorial/cover.png"
+        alt="도록 표지"
+        width={1000}
+        height={600}
+        className="py-10"
+      />
       <section className="w-1/2 flex flex-col">
-        <Image src={book1} alt="도록 내지" />
-        <Image src={book2} alt="도록 내지" />
-        <Image src={book3} alt="도록 내지" />
+        <Image
+          src="/images/editorial/book_1.png"
+          alt="도록 내지"
+          width={800}
+          height={600}
+        />
+        <Image
+          src="/images/editorial/book_2.png"
+          alt="도록 내지"
+          width={800}
+          height={600}
+        />
+        <Image
+          src="/images/editorial/book_3.png"
+          alt="도록 내지"
+          width={800}
+          height={600}
+        />
       </section>
       <section className="pl-10 flex flex-col gap-10">
         <div>
@@ -27,9 +41,24 @@ const Editorial = () => {
           </p>
         </div>
         <div className="w-1/5 flex gap-2">
-          <Image src={print1} alt="인쇄 감리" />
-          <Image src={print2} alt="도록 진열" />
-          <Image src={print3} alt="도록 진열" />
+          <Image
+            src="/images/editorial/print_1.png"
+            alt="인쇄 감리"
+            width={400}
+            height={600}
+          />
+          <Image
+            src="/images/editorial/print_2.png"
+            alt="도록 진열"
+            width={400}
+            height={600}
+          />
+          <Image
+            src="/images/editorial/print_3.png"
+            alt="도록 진열"
+            width={400}
+            height={600}
+          />
         </div>
       </section>
     </main>
