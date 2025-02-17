@@ -40,11 +40,11 @@ export default function Home() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   const toggleAccordion = (idx: number) => {
-    if (openIdx === idx) {
-      setOpenIdx(0); // 현재 열린 패널을 클릭하면 패널 1로 이동
-    } else {
-      setOpenIdx(idx); // 클릭한 패널로 변경
-    }
+    // if (openIdx === idx) {
+    //   setOpenIdx(0); // 현재 열린 패널을 클릭하면 패널 1로 이동
+    // } else {
+    setOpenIdx(idx); // 클릭한 패널로 변경
+    // }
   };
 
   return (
