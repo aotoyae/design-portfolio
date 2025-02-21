@@ -42,7 +42,8 @@ const Web = () => {
             <p className="leading-relaxed">
               그랑핸드의 제품 리스트 페이지입니다.
               <br />
-              제품들을 세 열로 정렬하고 제품명, 가격, 용량을 표시하였습니다.
+              Perfume 메뉴를 통해 이동 가능하며 제품들을 세 열로 정렬하고
+              제품명, 가격, 용량을 표시하였습니다.
             </p>
           </article>
           <article className="pl-3 pr-1">
@@ -50,8 +51,9 @@ const Web = () => {
             <p className="leading-relaxed">
               그랑핸드의 제품 상세 페이지입니다.
               <br />
-              대표 이미지 두 개와 향에 맞는 사진을 상단에 배치하습니다. 하단에서
-              제품의 상세 정보를 확인 할 수 있습니다.
+              Susie Salmaon 제품 클릭으로 이동 가능하며 대표 이미지 두 개와 향에
+              맞는 사진을 상단에 배치하였습니다. 하단에서 제품의 상세 정보를
+              확인 할 수 있습니다.
             </p>
           </article>
           <article className="pl-3 pr-1">
@@ -117,7 +119,7 @@ const Web = () => {
         </div>
         <div className="pb-40 flex flex-col items-center">
           <h6 className="font-bold pb-2">
-            HTML | CSS | Jquery 를 활용한 모리의 홈페이지 디자인 및 구성
+            HTML | CSS | jQuery 를 활용한 모리의 홈페이지 디자인 및 구성
           </h6>
           <div className="flex gap-4 underline underline-offset-1">
             <Link
