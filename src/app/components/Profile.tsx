@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Profile = () => {
   return (
-    <main className="py-4 pl-4 grid grid-cols-7 gap-6">
+    <main className="grid grid-cols-7 gap-6 py-4 pl-4">
       <section className="col-span-2 flex flex-col gap-[50vh]">
         <h6 className="font-bold">김소현 sohyeon kim</h6>
         <p className="leading-relaxed">
@@ -10,7 +10,7 @@ const Profile = () => {
           프론트엔드 개발을 공부하고 있습니다. 시각적인 요소에 대한 호기심이
           많으며, 인터랙티브한 웹 경험을 만드는 데 열정을 가지고 있습니다.
           소비자 중심적인 사고와 긍정적인 소통 방식을 중요하게 생각합니다.
-          contact:
+          contact:&nbsp;
           <Link
             href="#"
             onClick={(e) => {
@@ -19,7 +19,7 @@ const Profile = () => {
             }}
             className="underline underline-offset-2"
           >
-            aotoyae@gamil.com
+            aotoyae@gmail.com
           </Link>
         </p>
       </section>
